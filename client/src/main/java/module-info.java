@@ -3,6 +3,6 @@ module ru.kosarev.cleint.client {
     requires javafx.fxml;
 
 
-    opens ru.kosarev.cleint.client to javafx.fxml;
-    exports ru.kosarev.cleint.client;
+    opens ru.kosarev.cloud6 to javafx.fxml;
+    exports ru.kosarev.cloud6;
 }

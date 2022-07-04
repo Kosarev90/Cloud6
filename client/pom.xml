@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>ru.kosarev.cleint.client/ru.kosarev.cleint.client.HelloApplication</mainClass>
+                            <mainClass>ru.kosarev.cleint.client/ru.kosarev.cloud6.ChatApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
