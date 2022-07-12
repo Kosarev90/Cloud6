@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ListView?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ru.kosarev.cloud6.ChatController">
-    <TextField fx:id="textView" onAction="#sendMessage" />
-    <ListView fx:id="listView" prefHeight="194.0" prefWidth="263.0" />
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kosarev.cloud6.ChatController">
+
+      <HBox prefHeight="361.0" prefWidth="576.0">
+            <ListView fx:id="ClientView" prefHeight="300.0" prefWidth="268.0" />
+            <ListView fx:id="ServerView" prefHeight="349.0" prefWidth="304.0" />
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="600.0">
+            <Button mnemonicParsing="false" onAction="#upload" prefHeight="49.0" prefWidth="86.0" text="To server" />
+            <Button mnemonicParsing="false" onAction="#download" prefHeight="42.0" prefWidth="88.0" text="From server" />
+      </HBox>
+
 </VBox>

@@ -15,11 +15,20 @@ public class Network {
         is = new DataInputStream(socket.getInputStream());
         os = new DataOutputStream(socket.getOutputStream());
     }
-    public String readMessage() throws IOException {
+    public String readString() throws IOException {
         return is.readUTF();
     }
     public void writeMessage(String message) throws IOException {
         os.writeUTF(message);
         os.flush();
+    }
+    public int readInt() throws IOException {
+        return is.readInt();
+    }
+    public DataOutputStream getOs(){
+        return  os;
+    }
+    public DataInputStream getIs(){
+        return is;
     }
 }
