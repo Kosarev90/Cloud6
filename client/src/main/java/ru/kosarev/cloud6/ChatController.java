@@ -46,7 +46,6 @@ public class ChatController implements Initializable {
                         Platform.runLater(() -> ServerView.getItems().add(file));
                     }
                 }
-                ;
             }
         } catch (Exception e) {
             System.err.println("Connected lost");
